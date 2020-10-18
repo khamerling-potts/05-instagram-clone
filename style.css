@@ -1,0 +1,354 @@
+
+/* body
+{
+    width: 60%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+} */
+
+.content{
+    width: 60%;
+    background-color: rgb(250,250,250);
+    margin: auto;
+}
+
+.logos{
+   
+    padding: 10px;
+    margin: 20px;
+    font-family: Lobster;
+    height: 30%;
+}
+.searchbar{
+    position: relative;
+    padding: 10px;
+    margin: 20px;
+    
+    
+    color: rgb(226, 226, 226);
+    
+}
+
+.fa-search{
+    float: left;
+}
+.search{
+    text-align: center;
+    background-color: rgb(250,250,250);
+    border: 1px solid rgb(226, 226, 226);
+    color: rgb(226, 226, 226);
+}
+
+.headericons{
+    margin: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.fa-compass,
+#headerheart,
+.fa-user{
+    margin: 10px;
+    padding: 10px;
+}
+
+.headerbar {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 60%;
+    height: 8%;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+    border: 1px solid rgb(226, 226, 226);
+}
+.content{
+    margin-top: 75px;
+    position: relative;
+}
+
+
+
+@media (min-width: 1025px) {
+   
+    .maincontent{
+        position: relative;
+        float: left;
+        margin-left: 40px;
+        width: 56%;
+        height: 88%;
+        border: 1px solid black;
+    }
+
+    .sidebar{
+        
+        float: left;
+        width: 30%;
+        height: 300px;
+        padding: 0px;
+        padding-top: 0px;
+        margin: 0px;
+        background-color: rgb(250,250,250);
+        padding: 10px 
+    }
+
+    .profile,
+    .story1,
+    .story2,
+    .story3,
+    .story4,
+    .story5,
+    .story6 {
+        float: left;
+        width: 100%;
+        height: 20%;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 5px;
+        /* border: 1px solid black; */
+    }
+    #image1,
+    #image2,
+    #image3,
+    #image4,
+    #image5,
+    #image6,
+    #image7 {
+        position: relative;
+        float: left;
+        width: 40px;
+        height: auto;
+        margin: 10px;
+        
+    }
+
+    .names1,
+    .names2,
+    .names3,
+    .names4,
+    .names5,
+    .names6,
+    .names7 {
+        position: relative;
+        float: left;
+        height: 100%;
+        width: 30%;
+    }
+    .username1,
+    .foobar2,
+    .foobar3,
+    .foobar4,
+    .foobar5,
+    .foobar6,
+    .foobar7 {
+        margin: 10px;
+    }
+    
+    .storiesheader{
+        position: relative;
+        float: left;
+        width: 100%;
+        height: 10%;
+        margin: auto;
+        border: 1px solid rgb(226, 226, 226);
+    }
+
+    
+    .storiestitle{
+        float: left;
+    }
+    .watchall{
+        float: right;
+    }
+
+    .stories{
+        height: 70%;
+        overflow: scroll;
+        clear: both;
+    } 
+}
+
+@media (max-width: 1024px) {
+    .sidebar{
+        display: none;
+    }
+
+    .maincontent{
+        margin: auto;
+        width: 80%;
+        border: 1px solid black;
+    }
+}
+
+.pictureheader1{
+    
+    width: 100%;
+    height: 7%;
+    /* margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 5px; */
+    
+
+}
+#user1pic{
+    position: relative;
+    float: left;
+    width: 40px;
+    height: auto;
+    margin: 10px;
+}
+.user1name {
+    position: relative;
+    float: left;
+    height: 100%;
+    width: 30%;
+}
+
+.ocean{
+    width: 100%;
+    height: auto;
+    float: left;
+}
+#ocean{
+    float: left;
+    width: 100%;
+    height: auto;
+}
+
+.picicons{
+    float: left;
+}
+#heart,
+#comment,
+#share{
+    float: left;
+    margin: 10px;
+}
+
+.fa-bookmark{
+    margin: 10px;
+    float: right;
+}
+
+.picinfo{
+    float: left;
+    width: 100%;
+}
+
+.addcomment{
+    float: left;
+    width: 100%;
+}
+
+
+
+
+/* changing width and height of 2+ elements. Width and height also changed in other sections
+table {
+    width: 70%;
+}
+th {
+    height: 30px;
+}
+
+.intro {
+    width: 100%; 
+}
+
+form textarea {
+    width: 50%;
+    height: 100px;
+}
+
+/* adding border to an element
+table, th, td {
+    border: 2px solid rgb(123, 140, 141);
+}
+
+/* adding margins and padding to 2+ elements 
+form, iframe, div{
+    margin: 10px;
+    padding: 10px;
+}
+
+/* span element less than full width and center it
+.headings {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+
+/* box shadow added to element
+table {
+    box-shadow: 3px 3px #666666;
+}
+h1{
+    text-shadow: 1px 1px 3px #666666;
+}
+
+/* 4+ declarations for list
+ul {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 14px;
+    list-style-type: circle;
+    list-style-position: inside;
+}
+
+/* 4+ declarations for a table 
+table {
+    font-size: 14px;
+    border-collapse: collapse;
+    background-color: lightcyan;
+    text-align: center;
+    margin: auto;
+}
+
+/* 4+ declarations for a form 
+form input {
+   background-color: green;
+   color: white;
+}
+form textarea  {
+    border: 2px solid rgb(123, 140, 141);
+    background-color: lightcyan;
+    color: rgb(123, 140, 141);
+}
+
+/* fixed header bar 
+.headerbar {
+    background-color: lightcyan;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    margin-top: 0px;
+    margin-left: 0px;
+}
+.content{
+    margin-top: 100px;
+}
+
+/* column layout for my image-list pairs 
+img, #paragraph {
+    float: left;
+    width: 50%;
+    height: auto;
+    margin: 10px;
+    padding: 10px;
+   
+}
+/* ul {
+    overflow: hidden;
+} 
+hr {
+    clear: left;
+}
+
+/* additional stuff 
+
+
+ */
