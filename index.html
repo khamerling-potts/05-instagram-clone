@@ -4,30 +4,31 @@
         <meta charset="utf-8">
         <meta name="description" content="Instagram clone">
         <title>CSE 204 - Assignment 05 Instagram Clone</title>
-        <link href="style.css" type="text/css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet'>
-        <!-- <link href="all.css" type="text/css" rel="stylesheet"> -->
+        <link href="style.css" type="text/css" rel="stylesheet">
+
     </head> 
-    <body>
+    <body style="background-color: rgb(250, 250, 250);">
 
     <div class="content">
         <div class="headerbar">
-            <span class="logos">
+            <div class="logos">
                 <i class="fa fa-instagram">  | Instagram</i>
-            </span>
-             <span class="searchbar">
-                <i class="fa fa-search"></i>
+            </div>
+            <div class="searchbar">
+             <form>
+                 <i class="fa fa-search"></i> 
                 <input class="search" type="text" placeHolder="Search">
-             </span> 
-             <span class="headericons">
+             </form> 
+            </div>
+             <div class="headericons">
                 <i class="fa fa-compass"></i>
                 <i class="fa fa-heart" id="headerheart"></i>
                 <i class="fa fa-user"></i>
-             </span>      
+             </div>      
         </div>
 
-        <div class="maincontent">
+        <div class="post1">
             <div class="pictureheader1">
                 <img src="image2.png" id="user1pic" alt="User 1" title="User 1" class="responsive">
                     <p class="user1name">foobar2</p>
@@ -44,12 +45,26 @@
                 <i class="fa fa-bookmark"></i>
             </div>
             <div class="picinfo">
-                <p>15 likes <br> foobar2  A day at the ocean <br> 2 hours ago</p>
+                <span class="likes1">
+                    15 likes
+                </span>
+                <span class="usernameinfo1">
+                    foobar2
+                </span>
+                <span class="description1">
+                    A day at the ocean
+                </span>
+                <span class="time1">
+                    2 hours ago
+                </span>
+                <!-- <p>15 likes <br> foobar2  A day at the ocean <br> 2 hours ago</p> -->
             </div>
             <div class="addcomment">
                 <p>Add a comment...</p>
             </div>
         </div>
+
+        
 
        <div class="sidebar">
 
@@ -67,189 +82,157 @@
 
            <div class="stories">
 
-            <div class="story1">
-                <img src="image2.png" id="image2" alt="Image 2" title="Image 2" class="responsive">
-                <div class="names2">
-                    <p class="foobar2">Foobar2 <br> Ashley</p>
+                <div class="story1">
+                    <img src="image2.png" id="image2" alt="Image 2" title="Image 2" class="responsive">
+                    <div class="names2">
+                        <p class="foobar2">Foobar2 <br> 1 hour ago</p>
+                    </div>
                 </div>
-            </div>
 
-            <div class="story2">
-                <img src="image3.png" id="image3" alt="Image 3" title="Image 3" class="responsive">
-                <div class="names3">
-                    <p class="foobar3">Foobar3 <br> Jamie</p>
+                <div class="story2">
+                    <img src="image3.png" id="image3" alt="Image 3" title="Image 3" class="responsive">
+                    <div class="names3">
+                        <p class="foobar3">Foobar3 <br> 2 hours ago</p>
+                    </div>
                 </div>
-            </div>
 
-            <div class="story3">
-                <img src="image4.png" id="image4" alt="Image 4" title="Image 4" class="responsive">
-                <div class="names4">
-                    <p class="foobar4">Foobar4 <br> Alex</p>
+                <div class="story3">
+                    <img src="image4.png" id="image4" alt="Image 4" title="Image 4" class="responsive">
+                    <div class="names4">
+                        <p class="foobar4">Foobar4 <br> 3 hours ago</p>
+                    </div>
                 </div>
-            </div>
 
-            <div class="story4">
-                <img src="image5.png" id="image5" alt="Image 5" title="Image 5" class="responsive">
-                <div class="names5">
-                    <p class="foobar5">Foobar5 <br> Jordan</p>
+                <div class="story4">
+                    <img src="image5.png" id="image5" alt="Image 5" title="Image 5" class="responsive">
+                    <div class="names5">
+                        <p class="foobar5">Foobar5 <br> 4 hours ago</p>
+                    </div>
                 </div>
-            </div>
 
-            <div class="story5">
-                <img src="image6.png" id="image6" alt="Image 6" title="Image 6" class="responsive">
-                <div class="names6">
-                    <p class="foobar6">Foobar6 <br> Lindsay</p>
+                <div class="story5">
+                    <img src="image6.png" id="image6" alt="Image 6" title="Image 6" class="responsive">
+                    <div class="names6">
+                        <p class="foobar6">Foobar6 <br> 5 hours ago</p>
+                    </div>
                 </div>
-            </div>
 
-            <div class="story6">
-                <img src="image7.png" id="image7" alt="Image 7" title="Image 7" class="responsive">
-                <div class="names7">
-                    <p class="foobar7">Foobar7 <br> Paul</p>
+                <div class="story6">
+                    <img src="image7.png" id="image7" alt="Image 7" title="Image 7" class="responsive">
+                    <div class="names7">
+                        <p class="foobar7">Foobar7 <br> 6 hours ago</p>
+                    </div>
                 </div>
-            </div>
-        </div>
+             </div>
+
+             <div class="footer">
+                 <a>About Us · </a>
+                 <a>Support · </a>
+                 <a>Press · </a>
+                 <a>API · </a>
+                 <a>Jobs · </a>
+                 <a>Privacy · </a>
+                 <a>Terms · </a>
+                 <a>Directory · </a>
+                 <a>Profiles · </a>
+                 <a>Hashtags · </a>
+                 <a>Language</a>
+                 <br> <br>
+                 <a>2018 INSTAGRAM</a>
+             </div>
        </div> 
+
+       <div class="post2">
+        <div class="pictureheader2">
+            <img src="image3.png" id="user2pic" alt="User 2" title="User 2" class="responsive">
+                <p class="user2name">foobar2</p>
+        </div>
+        <div class="dog">
+            <img src="dog.jpg" id="dog" alt="Dog" title="Dog" class="responsive">
+        </div>
+        <div class="picicons">
+            <i class="fa fa-heart" id="heart"></i>
+            <i class="fa fa-comment" id="comment"></i>
+            <i class="fa fa-share" id="share"></i>
+        </div>
+        <div class="saveicon">
+            <i class="fa fa-bookmark"></i>
+        </div>
+        <div class="pic2info">
+            <span class="likes2">
+                20 likes
+            </span>
+            <span class="usernameinfo2">
+                foobar3
+            </span>
+            <span class="description2">
+                The best doggo 
+            </span>
+            <span class="time2">
+                3 hours ago
+            </span>
+        </div>
+        <div class="addcomment">
+            <p>Add a comment...</p>
+        </div>
+
 
     </div>
 
-<!-- 
-        <div class="content">
-        <div class="headings">
-        <h1>A Guide to Rehoboth Beach, DE</h1>
-        <h2>My pick of things you can't miss while visiting!</h2>
-        
+    <div class="suggestions">
+        <div class="suggestheader">
+            <span class="suggesttitle">Suggestions For You</span>
+            <span class="seeall">See All</span>
         </div>
-
-        <div class="outline of activities" id="myoutline">
-            <p>
-                <img src="rehoboth.jpg" alt="Rehoboth Boardwalk" title="Rehoboth" width="400" height="267">
-                <br>
-                <p class="intro">
-                <strong>Rehoboth Beach, DE</strong>
-                Rehoboth Beach is a small but lively coastal town in Deleware, just a couple of hours outside large cities like Philadelphia and DC. 
-                It makes a perfect vacation for families, couples, or even single travelers looking to unwind. 
-                Before we get too in depth, here's a break down of things to do in Rehoboth, ordered by price point for the budget friendly traveler.
-                </p>
-                <table class="table1"> I referenced W3C to help with text align/tables
-                <thead>
-                    <tr>
-                        <th>Activity</th>
-                        <th>Price point</th>
-                        <th>Hours of operation</th>
-                    </tr>
-                </thead> 
-                <tbody>
-                    <tr>
-                        <td>Beach</td>
-                        <td>Free!</td>
-                        <td>24 hours (but no sleeping on the beach allowed)</td>
-                    </tr>
-                    <tr>
-                        <td>Boardwalk</td>
-                        <td>Free, with optional paid activities</td>
-                        <td>24 hours</td>
-                    </tr>
-                    <tr>
-                        <td>Funland/Arcades</td>
-                        <td>Paid optional games and rides ($1+)</td>
-                        <td>2-9pm</td>
-                    </tr>
-                    <tr>
-                        <td>Cultured Pearl restaurant and bar</td>
-                        <td>$$$ ($20+)</td>
-                        <td>4-9pm</td>
-                    </tr>
-                </tbody>
-                </table>
-            </p>
-         </div>
-         <hr>
-        
-         <div class="Beach" id="beachdescription"> A Description of the actual beach in Rehoboth and its perks
-             <p>
-                <img src="beach.jpg" alt="Rehoboth Beach" title="Beach" class="responsive">
-                <br>
-                <p class="paragraph">
-                <strong>The Beach: Features</strong>
-                <ul class="beachlist">
-                    <li>Chairs and umbrellas can be rented out for lounging on the sand</li>
-                    <li>Swimming in the ocean is allowed, depending on the tide and time of day</li>
-                    <li>Lifeguards are always visible to ensure your safety</li>
-                    <li>Drinking on the beach is not allowed, but feel free to bring other snacks and drinks</li>
-                    <li>Sand can be a bit rough near the shore, so bring watershoes if you have sensitive feet!</li>
-                </ul>
-                </p>
-             </p>
-
-         </div>
-         <hr>
-         <div class="Boardwalk" id="boardwalkdescription"> A Description of the Boardwalk in Rehoboth and its perks
-            <p>
-               <img src="boardwalk.jpg" alt="Rehoboth Boardwalk" title="Boardwalk" width="500" height="283">
-               <br>
-               <p class="paragraph">
-               <strong>The Boardwalk: Features</strong>
-               <ul class="boardwalklist">
-                   <li>The boardwalk offers numerous shops, snacks, and restaurants to keep you entertained</li>
-                   <li>Benches can flip so that you can have views of the beach or shops</li>
-                   <li>Don't miss out on some Rehoboth classics, such as Kohr's Bros icecream, Grotto's pizza, and Thrashers fries</li>
-                   <li>Boardwalk continues north, where bike paths and state parks allow you to escape the crowds</li>
-               </ul>
-            </p>
-            </p>
-
+           
+        <div class="suggestwrapper">
+            <div class="suggest1box">
+                <div class="suggest1pic">
+                    <img src="image8.png" id="suggest1pic" alt="Suggestion 1" title="Suggestion 1" class="responsive">
+                </div>
+                <div class="suggest1name">
+                    Jamie
+                </div>
+                <div class="suggest1followers">
+                    Followed by foobar1
+                </div>
+                <div class="followbutton1">
+                    <input type="submit" class="button1" value="Follow">
+                </div>
+            </div>
+            <div class="suggest2box">
+                <div class="suggest2pic">
+                    <img src="image9.png" id="suggest2pic" alt="Suggestion 2" title="Suggestion 2" class="responsive">
+                </div>
+                <div class="suggest2name">
+                    Alex
+                </div>
+                <div class="suggest2followers">
+                    Followed by foobar2
+                </div>
+                <div class="followbutton2">
+                    <input type="submit" class="button2" value="Follow">
+                </div>
+            </div>
+            <div class="suggest3box">
+                <div class="suggest3pic">
+                    <img src="image10.png" id="suggest3pic" alt="Suggestion 3" title="Suggestion 3" class="responsive">
+                </div>
+                <div class="suggest3name">
+                    Lindsay
+                </div>
+                <div class="suggest3followers">
+                    Followed by foobar3
+                </div>
+                <div class="followbutton3">
+                    <input type="submit" class="button3" value="Follow">
+                </div>
+            </div>
         </div>
-        <hr>
-         <div class="Funland/Arcades" id="arcadesdescription"> A Description of the arcades in Rehoboth and their perks
-            <p>
-               <img src="funland.jpg" alt="Rehoboth Funland" title="Funland" width="500" height="333">
-               <br>
-               <p class="paragraph">
-               <strong>Funland & Arcades: Features</strong>
-               <ul class="funlandlist">
-                   <li>Funland offers games and rides starting at $.25</li>
-                   <li>Boardwalk Arcades are dispersed throughout the boardwalk and provide a great Funland alternative</li>
-                   <li>Games can either give you immediate prizes or tickets that can be redeemed for goodies later on</li>
-                   <li>Rides use ride tickets, which can be purchased at the ticket booth. Games take quarters that you can exchange at the change machines</li>
-               </ul>
-            </p>
-            </p>
-        </div>
-        <hr>
-         <div class="Cultured Pearl" id="culturedpearldescription"> A Description of the The Cultured Pearl restaurant in Rehoboth and its perks
-            <p>
-               <img src="culturedpearl.jpg" alt="The Cultured Pearl Restaurant and Sushi Bar" title="Cultured Pearl" width="550" height="364">
-               <br>
-               <p class="paragraph">
-               <strong>The Cultured Pearl Restaurant and Sushi Bar: Features</strong>
-               <ul class="culturedpearllist">
-                   <li>The Cultured Pearl is a large Japanese themed Sushi bar, featuring indoor and outdoor dining in Gazebos</li>
-                   <li>Koi ponds are throughout the restaurant, including under the outdoor gazebos</li>
-                   <li>The Cultured Pearl is a multi level restaurant, with a sushi bar, multiple dining rooms, and a gift shop</li>
-                   <li>The menu is large, offering high quality sushi combos, a la carte sushi, and other Japanese cuisines</li>
-                   <li>Be sure to check out the parakeet cage on the second level!</li>
-               </ul>
-            </p>
-            </p>
+    </div>
 
-        </div>
-        <hr>
-        <form>
-            <label for="comments">Did we miss your favorite activity in Rehoboth? Leave a comment to share some of your favorite things to do!</label>
-            <br>
-            <textarea id="comments" name="comments" rows="4" cols="50">Please leave comments here</textarea>
-            <input type="submit" value="submit">
-        </form>
-        
-        Embedding a Google Map. HTML taken directly from Google's map page
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24904.47154704856!2d-75.10149661783613!3d38.7164556858308!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b896667c7333a7%3A0x61182de5a751636a!2sRehoboth%20Beach%2C%20DE!5e0!3m2!1sen!2sus!4v1601234605126!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-        <br>
-        <a href="#top">Back to top</a>
+    </div>
 
-        
-      
-    </div> -->
 
     </body>
 </html>
